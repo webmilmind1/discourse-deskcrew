@@ -1,0 +1,19 @@
+widget_key:
+  type: string
+  default: ""
+  description: "Your DeskCrew public widget key (starts with pub_). Find it in your DeskCrew dashboard under Install. The widget stays hidden until this is set."
+board:
+  type: string
+  default: ""
+  description: "Optional: your DeskCrew board slug (lowercase letters, numbers and hyphens only)."
+accent_color:
+  type: string
+  default: "#4f46e5"
+  description: "Optional: accent colour for the widget, as a hex value (for example #4f46e5)."
+position:
+  type: enum
+  default: "right"
+  choices:
+    - "right"
+    - "left"
+  description: "Which side of the screen the widget launcher appears on."

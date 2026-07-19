@@ -1,0 +1,31 @@
+<script type="text/discourse-plugin" version="1.0">
+  // DeskCrew widget loader for Discourse.
+  //
+  // Reads the component's admin settings and injects the DeskCrew widget script onto every
+  // forum page. The script element is built with createElement + setAttribute (never innerHTML),
+  // and every setting value is validated against a strict character class before use, so a
+  // setting can never inject markup or break out of an attribute. The widget stays hidden until
+  // a valid public key is set.
+  (function () {
+    var key = String(settings.widget_key || "").trim();
+    if (!/^pub_[A-Za-z0-9]{8,64}$/.test(key)) return; // no key / malformed → do nothing
+    if (document.getElementById("deskcrew-widget")) return; // idempotent
+
+    var s = document.createElement("script");
+    s.id = "deskcrew-widget";
+    s.src = "https://deskcrew.io/desk.js";
+    s.defer = true;
+    s.setAttribute("data-key", key);
+
+    var board = String(settings.board || "").trim();
+    if (/^[a-z0-9-]{1,64}$/.test(board)) s.setAttribute("data-board", board);
+
+    var color = String(settings.accent_color || "").trim();
+    if (/^#[0-9a-fA-F]{3,8}$/.test(color)) s.setAttribute("data-color", color);
+
+    var pos = String(settings.position || "").trim();
+    if (pos === "left" || pos === "right") s.setAttribute("data-position", pos);
+
+    document.head.appendChild(s);
+  })();
+</script>

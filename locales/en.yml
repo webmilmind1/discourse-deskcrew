@@ -1,0 +1,8 @@
+en:
+  theme_metadata:
+    description: "Adds the DeskCrew support-chat widget to your Discourse forum. Set your widget key in the component settings."
+    settings:
+      widget_key: "Your DeskCrew public widget key (starts with pub_). The widget stays hidden until this is set."
+      board: "Optional: your DeskCrew board slug (lowercase letters, numbers and hyphens only)."
+      accent_color: "Optional: accent colour for the widget, as a hex value (for example #4f46e5)."
+      position: "Which side of the screen the widget launcher appears on."
