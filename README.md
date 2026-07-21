@@ -4,6 +4,10 @@
 
 <a href="https://www.producthunt.com/products/deskcrew?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-deskcrew"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1197215&theme=dark" alt="DeskCrew on Product Hunt" width="250" height="54" /></a>
 
+[![The DeskCrew AI support widget opening on a Discourse forum and answering a question about adding live chat](https://deskcrew.b-cdn.net/plugins/discourse-demo.gif)](https://deskcrew.b-cdn.net/plugins/discourse-demo.mp4)
+
+<sub>The widget running on a Discourse forum. <a href="https://deskcrew.b-cdn.net/plugins/discourse-demo.mp4">Watch the full quality video</a>.</sub>
+
 A Discourse **theme component** that adds the [DeskCrew](https://deskcrew.io) support-chat widget
 to your forum. Visitors get live chat, AI answers from your knowledge base, and a help center,
 without touching any code.
