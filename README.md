@@ -1,7 +1,11 @@
 # DeskCrew for Discourse
 
+[![license](https://img.shields.io/badge/license-MIT-4f46e5)](./LICENSE)
+
+<a href="https://www.producthunt.com/products/deskcrew?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-deskcrew"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1197215&theme=dark" alt="DeskCrew on Product Hunt" width="250" height="54" /></a>
+
 A Discourse **theme component** that adds the [DeskCrew](https://deskcrew.io) support-chat widget
-to your forum. Visitors get live chat, AI answers from your knowledge base, and a help center —
+to your forum. Visitors get live chat, AI answers from your knowledge base, and a help center,
 without touching any code.
 
 ## Install
@@ -16,13 +20,13 @@ without touching any code.
 
 Open the component's **Settings** and set:
 
-- **widget_key** — your DeskCrew public widget key (starts with `pub_`). Find it in your DeskCrew
+- **widget_key**: your DeskCrew public widget key (starts with `pub_`). Find it in your DeskCrew
   dashboard under **Install**. *The widget stays hidden until this is set.*
-- **board** *(optional)* — your DeskCrew board slug.
-- **accent_color** *(optional)* — a hex colour for the widget, e.g. `#4f46e5`.
-- **position** *(optional)* — `right` (default) or `left`.
+- **board** *(optional)*: your DeskCrew board slug.
+- **accent_color** *(optional)*: a hex colour for the widget, e.g. `#4f46e5`.
+- **position** *(optional)*: `right` (default) or `left`.
 
-That's it — the widget appears on your forum within a minute.
+That's it. The widget appears on your forum within a minute.
 
 ## Content Security Policy
 
@@ -32,4 +36,4 @@ CSP and the widget doesn't appear, add `deskcrew.io` to your
 
 ## License
 
-MIT — see [LICENSE](./LICENSE). Questions: hello@deskcrew.io
+MIT, see [LICENSE](./LICENSE). Questions: hello@deskcrew.io
